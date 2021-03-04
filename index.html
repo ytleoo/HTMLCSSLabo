@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>HTML/CSS基礎実験</title>
+</head>
+<body>
+  <header class="header">
+    <h1>HTML/CSS実験</h1>
+  </header>
+  <main class="main">
+    <section class="content">
+      <h2 class="content-title">親要素と子要素</h2>
+      <div class="content-box">
+        <div class="test">
+          <div class="parent">
+           div .parent
+            <div class="child">
+              div .child
+            </div>
+            <div class="child">
+              div .child
+            </div>
+          </div>
+        </div>
+        <div class="text">
+          <p>
+            ① 親要素（.parent）と子要素(.child)のmarginとpaddingを変更してみましょう。
+          </p>
+          <p>
+            ② HTMLで要素のclass名を消してみましょう。
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <h2 class="content-title">ブロック要素とインライン要素</h2>
+      <div class="content-box">
+        <div class="test">
+          <div class="block">
+           div .block
+          </div>
+          <div class="block">
+           div .block
+          </div>
+            <a href="#" class="inline">a .inline</a>
+            <a href="#" class="inline">a .inline</a>
+        </div>
+        <div class="text">
+          <p>
+            ① ブロック要素（.block）とインライン要素（.inline）の<br>width, height, padding, margin を変更してみましょう。
+          </p>
+          <p>
+            ② displayプロパティを適用してみましょう。
+            <br>
+            　display: block;<br>
+            　display: inline;
+            <br>　display: inline-block;
+            <br>　display: none;
+          </p>
+          <p>
+            ③ HTMLで要素を増やしてみましょう。
+          </p>
+          <p>
+            発展：以下のプロパティをどこに適用したら反映されるか試してみましょう。<br>
+            text-align, vertical-align
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <h2 class="content-title">タイトル</h2>
+      <div class="content-box">
+        <div class="test">
+          テストスペース
+        </div>
+        <div class="text">
+          テキストスペース
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <h2 class="content-title">タイトル</h2>
+      <div class="content-box">
+        <div class="test">
+          テストスペース
+        </div>
+        <div class="text">
+          テキストスペース
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
