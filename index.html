@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
-  <title>HTML/CSS基礎実験</title>
+  <title>HTML/CSS Labo</title>
 </head>
 <body>
   <header class="header">
-    <h1>HTML/CSS実験</h1>
+    <h1>HTML/CSS Labo</h1>
   </header>
   <main class="main">
     <section class="content">
@@ -19,17 +19,14 @@
             <div class="child">
               div .child
             </div>
-            <div class="child">
-              div .child
-            </div>
           </div>
         </div>
         <div class="text">
           <p>
-            ① 親要素（.parent）と子要素(.child)のmarginとpaddingを変更してみましょう。
+            １ CSSで親要素（.parent）と子要素(.child)の<span>margin</span>と<span>padding</span>を変更してみましょう。
           </p>
           <p>
-            ② HTMLで要素のclass名を消してみましょう。
+            ２ HTMLで<span>閉じタグの位置</span>を変更して、親子関係を兄弟関係にしてみましょう。
           </p>
         </div>
       </div>
@@ -49,28 +46,147 @@
         </div>
         <div class="text">
           <p>
-            ① ブロック要素（.block）とインライン要素（.inline）の<br>width, height, padding, margin を変更してみましょう。
+            １ CSSでブロック要素（.block）とインライン要素（.inline）の<br><span>width, height, padding, margin </span>を変更してみましょう。
           </p>
           <p>
-            ② displayプロパティを適用してみましょう。
-            <br>
-            　display: block;<br>
-            　display: inline;
-            <br>　display: inline-block;
-            <br>　display: none;
+            ２ CSSで<span>displayプロパティ</span>を適用してみましょう。
+          
+          <ul class="hint">
+              <li>
+                display: block;
+              </li>
+              <li>
+                display: inline;
+              </li>
+              <li>
+                display: inline-block;
+              </li>
+              <li>
+                display: none;
+              </li>
+            </ul>
+          <p>
+            ３ HTMLで要素を増やしてみましょう。
           </p>
           <p>
-            ③ HTMLで要素を増やしてみましょう。
+            発展 どこに何を適用したら<span>上下左右の中央寄せ</span>が反映されるか試してみましょう。<br>
+          </p>
+          <div class="hint">
+          text-align, vertical-align, line-height ...
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="content">
+      <h2 class="content-title">classの使い方</h2>
+      <div class="content-box">
+        <div class="test">
+          <ul class="class-test">
+            <li class="class1">li .class1</li>
+            <li class="class1 class2">li .class1.class2 ←ここを選択する</li>
+            <li class="class2 ">li .class2</li>
+            <li>
+              li
+            </li>
+          </ul>
+        </div>
+        <div class="text">
+         <p>
+           １ 要素選択ツールで上から2番目の要素を選択する。
+         </p>
+          <p>２ CSSで<span>class1,class2それぞれのプロパティ</span>を削除したり追加したりしてみましょう。</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="content">
+      <h2 class="content-title">スタイルの継承</h2>
+      <div class="content-box">
+        <div class="test">
+          <ul class="ul-class">
+           ul .ul-class
+            <li class="li-class">
+             li .li-class
+              <a href="#" class="a-class">a .a-class</a>
+            </li>
+            <li class="li-class">
+             li .li-class
+              <a href="#" class="a-class">a .a-class</a>
+            </li>
+          </ul>
+        </div>
+        <div class="text">
+          <p>
+            １ <span>親要素の文字色</span>を変えてみましょう。
           </p>
           <p>
-            発展：以下のプロパティをどこに適用したら反映されるか試してみましょう。<br>
-            text-align, vertical-align
+            ２ <span>打ち消されているプロパティ</span>を確認しましょう。
+          </p>
+          <p>
+            ３ 自由にプロパティを適用して継承を試してみましょう。
+          </p>
+          <p>
+            発展 ●が点線の内側に入るようにしましょう。
+          </p>
+          <div class="hint">
+           方法は2通りあります。
+          </div>
+          <p>
+            Ｔips CSSの上書きについては<span>CSS 優先順位</span>で検索！
           </p>
         </div>
       </div>
     </section>
+    
     <section class="content">
-      <h2 class="content-title">タイトル</h2>
+      <h2 class="content-title">画像の表示</h2>
+      <div class="content-box">
+        <div class="test">
+         <h3>img .img-tag（imgタグを使用）</h3>
+          <img src="images/code.png" alt="PC" class="img-tag">
+          <div class="bg-image">
+            div .bg-image（background-imageプロパティを使用）
+          </div>
+        </div>
+        <div class="text">
+          <p>
+            １ それぞれの<span>要素の大きさ</span>を変更してみましょう。
+          </p>
+          <p>
+            ２ 下の要素の画像が<span>1枚、中央</span>に表示されるようにしましょう。
+          </p>
+          <p>
+            発展 使い分ける理由を考えてみましょう。
+          </p>
+          <div class="hint">
+           疑問が生じたら調べて試すことで検索力と実装力が磨かれます。検索ワード、記事選びの練習も大切です！<br>ここでは理由はお伝えしません。自分なりの答えをもって使い分けられると良いです。
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="content">
+      <h2 class="content-title">実装方法を選ぶ</h2>
+      <div class="content-box">
+        <div class="test">
+          <div class="oya">div .oya
+            <div class="ko">div .ko</div>
+            <div class="ko">div .ko</div>
+          </div>
+        </div>
+        <div class="text">
+          <p>発展 下図のようなデザインにしましょう。</p>
+          <img src="images/sample.png" alt="イメージ図" class="sample">
+          <div class="hint">
+            実装方法に正解はありません。組み合わせを考えて実装方法を選べると理想的です。
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="content">
+      <h2 class="content-title">追加実験用</h2>
       <div class="content-box">
         <div class="test">
           テストスペース
@@ -80,17 +196,7 @@
         </div>
       </div>
     </section>
-    <section class="content">
-      <h2 class="content-title">タイトル</h2>
-      <div class="content-box">
-        <div class="test">
-          テストスペース
-        </div>
-        <div class="text">
-          テキストスペース
-        </div>
-      </div>
-    </section>
+    
   </main>
 </body>
 </html>

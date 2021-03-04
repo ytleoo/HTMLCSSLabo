@@ -4,9 +4,19 @@
   box-sizing: border-box;
 }
 
+h1,h2,p,ul,div {
+  color: #555;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 15px;
+}
+
 .header {
   border-bottom: 1px solid #dbdbdb;
   padding: 20px;
+  text-align: center;
 }
 
 .main {
@@ -14,15 +24,16 @@
   margin: 20px auto; 
 }
 
+/*----format-----*/
 .content {
   box-shadow: 0px 0px 15px -5px #777777;
-  padding: 20px;
-  margin: 30px 0;
+  padding: 25px;
+  margin: 40px 0;
 }
 
 .content-title {
   border-bottom: 1px solid #cccccc;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .content-box {
@@ -30,23 +41,46 @@
 }
 
 .test {
-  width: 400px;
+  width: 450px;
   border: 1px solid #cccccc;
 }
 
 .text {
-  margin-left: 15px;
+  margin-left: 20px;
+  width: 480px;
 }
 
 .text p {
-  margin: 10px;
+  margin-bottom: 25px;
 }
 
+.text p::first-letter {
+  font-size: 1.3rem;
+  background: #d67272;
+  color: #fff;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+span {
+  font-weight: bold;
+  padding: 4px;
+  background: linear-gradient(transparent 65%,rgb(255 93 93 / 55%) 60%);
+  color: #571a1a;
+}
+
+.hint {
+  margin: -10px 30px 15px; 
+  list-style-type: square;
+  background: #f2f2f2;
+  padding: 5px 30px;
+}
+
+/*------test-----*/
 .parent {
-  width:  400px;
+  width:  200px;
   height: 200px;
   background: #fdb057;
-  display: flex;
   padding: 0;
   margin: 0;
 }
@@ -69,10 +103,93 @@
 }
 
 .inline {
-  width: 100px;
-  height: 50px;
+  width: 0;
+  height: 0;
   background: #34c2f7;
   margin: 0;
   padding: 0;
 }
 
+.class-test {
+  margin: 20px 40px;
+}
+
+.class1 {
+  background: #f7c2c2;
+}
+
+.class2 {
+  color: red;
+}
+
+.class1.class2 {
+  list-style-type: none;
+}
+
+/*--継承あり--*/
+.ul-class {
+  color: blue;
+  
+  border: 1px dotted #000;
+  margin: 10px;
+}
+
+.li-class {
+  font-weight: bold;
+  
+  background: #d8d8d8;
+  margin: 5px;
+}
+
+.a-class {
+
+}
+
+.img-tag {
+  
+}
+
+.bg-image {
+  height: 150px;
+  background-image: url(images/code.png);
+}
+
+/*
+    background: url(images/code.png) no-repeat;
+    background-size: contain;
+*/
+
+.oya {
+  background: #fdb057;
+  width: 300px;
+}
+
+.ko {
+  width: 100px;
+  background: #34c2f7;
+  border: 1px solid #efe24f;;
+}
+
+/*
+.oya {
+  margin: 0 auto;
+  height: 200px;
+}
+.ko {
+    display: inline-block;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.oya {
+    display: flex;
+    margin: 0 auto;
+    height: 200px;
+    align-items: center;
+}
+*/
+
+.sample {
+  width: 350px;
+    margin: 0 60px 30px;
+}
