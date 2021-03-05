@@ -15,8 +15,10 @@ h3 {
 
 .header {
   border-bottom: 1px solid #dbdbdb;
-  padding: 20px;
+  padding: 5px;
   text-align: center;
+  font-family: 'Cairo', sans-serif;
+  font-size: 20px;
 }
 
 .main {
@@ -159,10 +161,6 @@ span {
     background-size: contain;
 */
 
-.oya {
-  background: #fdb057;
-  width: 300px;
-}
 
 .ko {
   width: 100px;
@@ -171,7 +169,10 @@ span {
 }
 
 /*
+
 .oya {
+  background: #fdb057;
+  width: 300px;
   margin: 0 auto;
   height: 200px;
 }
