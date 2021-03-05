@@ -112,6 +112,40 @@ span {
   padding: 0;
 }
 
+/*中央寄せ
+
+.test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inline {
+    width: 82px;
+    height: 50px;
+    background: #34c2f7;
+    margin: 1px;
+    padding: 0;
+    text-align: center;
+    line-height: 50px;
+}
+
+.block {
+    width: 100px;
+    height: 50px;
+    background: #34c2f7;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+
+*/
+
+
+
 .class-test {
   margin: 20px 40px;
 }
