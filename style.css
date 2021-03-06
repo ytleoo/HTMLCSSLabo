@@ -226,5 +226,33 @@ span {
 
 .sample {
   width: 350px;
-    margin: 0 60px 30px;
+  margin: 0 60px 30px;
+}
+
+.answer1 {
+  width: 450px;
+  height: 300px;
+  border: 1px solid #cccccc;
+  margin-right: 20px;
+  padding: 50px 100px;
+}
+
+.answer1 .ko {
+  height: 100px;
+  display: inline-block;
+  margin: 3px;
+}
+
+.answer2 {
+  width: 450px;
+  height: 300px;
+  border: 1px solid #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer2 .ko {
+  height: 100px;
+  margin: 3px;
 }
