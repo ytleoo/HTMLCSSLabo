@@ -1,5 +1,6 @@
 # HTMLCSSLabo
 - HTML/CSSレクチャー用配布ページ
+- 検証ツールでCSSをいじって学ぶイベントとして企画
   
 https://htmlcsslabo.netlify.app
 
